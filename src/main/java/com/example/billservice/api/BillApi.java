@@ -3,6 +3,7 @@ package com.example.billservice.api;
 import com.example.billservice.dto.BillDto;
 import com.example.billservice.dto.ResponseDTO;
 import com.example.billservice.entity.Bill;
+import jakarta.mail.MessagingException;
 import org.json.JSONObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,6 @@ public interface BillApi {
 //    void createBills(@RequestBody Bill bill);
 
     @PostMapping
-    ResponseEntity<ResponseDTO> createBills(@RequestBody BillDto billDto);
+    ResponseEntity<ResponseDTO> createBills(@RequestBody BillDto billDto) throws MessagingException;
 
 }

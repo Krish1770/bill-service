@@ -7,6 +7,7 @@ import com.example.billservice.dto.ResponseDTO;
 import com.example.billservice.entity.Bill;
 import com.example.billservice.service.BillService;
 import com.example.billservice.service.impl.BillServiceImpl;
+import jakarta.mail.MessagingException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,7 @@ public class BillController implements BillApi {
     private BillService billService;
 
     @Override
-    public ResponseEntity<ResponseDTO> createBills(BillDto billDto) {
+    public ResponseEntity<ResponseDTO> createBills(BillDto billDto) throws MessagingException {
     return  billService.createBills(billDto);
     }
 
