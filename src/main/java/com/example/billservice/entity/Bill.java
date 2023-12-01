@@ -10,6 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.schema.MongoJsonSchema;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Collections;
 import java.util.List;
 
@@ -32,4 +33,7 @@ public class Bill implements Serializable {
 
     @JsonProperty("orderItems")
      private List<ResponseOrderItems> orderItems;
+
+
+
 }

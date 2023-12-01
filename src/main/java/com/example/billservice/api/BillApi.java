@@ -18,6 +18,12 @@ public interface BillApi {
 //    void createBills(@RequestBody Bill bill);
 
     @PostMapping
-    ResponseEntity<ResponseDTO> createBills(@RequestBody BillDto billDto) throws MessagingException;
+     ResponseEntity<ResponseDTO>createBills(@RequestBody BillDto billDto) throws MessagingException;
+
+//    @PostMapping("generateMailFromProxy")
+//    void generateMailFromProxy(String emailId,Bill bill,String id) throws MessagingException;
+
+//    @PostMapping("generateMail")
+//    void generateMail(String emailId,Bill bill,String id) throws MessagingException;
 
 }

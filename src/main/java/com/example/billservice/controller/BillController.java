@@ -27,5 +27,15 @@ public class BillController implements BillApi {
     return  billService.createBills(billDto);
     }
 
+//    @Override
+//    public void generateMailFromProxy(String emailId, Bill bill, String id) throws MessagingException {
+//         billService.generateMailFromProxy(emailId,bill,id);
+//    }
+
+//    @Override
+//    public void generateMail(String emailId, Bill bill, String id) throws MessagingException {
+//     billService.generateMail(emailId,bill,id);
+//    }
+
 }
 

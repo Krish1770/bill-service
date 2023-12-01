@@ -11,4 +11,5 @@ import org.springframework.stereotype.Service;
 @Service
 public interface BillService {
     ResponseEntity<ResponseDTO> createBills(BillDto billDto) throws MessagingException;
-}
+
+  }
