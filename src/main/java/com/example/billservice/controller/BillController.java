@@ -13,6 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.CompletableFuture;
+
 @RestController
 public class BillController implements BillApi {
 
@@ -24,7 +26,16 @@ public class BillController implements BillApi {
 
     @Override
     public ResponseEntity<ResponseDTO> createBills(BillDto billDto) throws MessagingException {
-    return  billService.createBills(billDto);
+
+        ResponseEntity<ResponseDTO>response = billService.createBills(billDto);
+
+        System.out.println("value :"+response);
+    return  response;
+    }
+
+    @Override
+    public String health() {
+        return "health";
     }
 
 //    @Override

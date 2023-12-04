@@ -17,10 +17,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 
 @Service
@@ -34,12 +36,13 @@ public class BillServiceImpl implements BillService {
     @Autowired
     private JavaMailSender javaMailSender;
 
+
     @Override
     public ResponseEntity<ResponseDTO> createBills(BillDto billDto) throws MessagingException {
 
 
         Bill bill = new Bill();
-
+        System.out.println(billDto);
         bill.setUserName(billDto.getUserName());
 
         List<ResponseOrderItems> orderItemsList = new ArrayList<>();
@@ -72,15 +75,16 @@ public class BillServiceImpl implements BillService {
         billRepoService.insert(bill);
         String id = bill.getId();
 
+
 //        generateMail(billDto.getEmailId(), bill, id);
 
         System.out.println(id);
 
         GenerateMailDTO generateMailDTO=new GenerateMailDTO(billDto.getEmailId(),bill,id);
-
+        System.out.println(generateMailDTO);
         proxyCollaboration.generateMail(generateMailDTO);
 
-        return ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("bill generated", id, HttpStatus.OK));
+        return (ResponseEntity.status(HttpStatus.OK).body(new ResponseDTO("bill generated", id, HttpStatus.OK)));
     }
 
 //    @Override
