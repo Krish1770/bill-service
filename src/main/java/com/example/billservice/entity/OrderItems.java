@@ -15,7 +15,7 @@ public class OrderItems implements Serializable {
     @JsonProperty("id")
     private Long id;
 
-    @JsonProperty("item")
+    @JsonProperty("Item")
     private ReceivedItems item;
 
     @JsonProperty("quantity")

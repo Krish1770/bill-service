@@ -15,7 +15,7 @@ public class ResponseOrderItems {
     @JsonProperty("id")
     private Long id;
 
-    @JsonProperty("item")
+    @JsonProperty("Item")
     private String item;
 
     private BigDecimal gst;

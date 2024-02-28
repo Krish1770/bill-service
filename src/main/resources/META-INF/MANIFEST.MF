@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Main-Class: com.example.billservice.BillServiceApplication
+Class-Path: spring-boot-starter-tomcat-3.0.1.jar jackson-datatype-jsr310
+ -2.14.1.jar spring-jcl-6.0.3.jar spring-boot-autoconfigure-3.0.1.jar sp
+ ring-expression-6.0.3.jar tomcat-embed-el-10.1.4.jar commons-fileupload
+ -1.4.jar spring-data-commons-3.0.0.jar spring-boot-starter-data-mongodb
+ -3.0.1.jar bcpkix-jdk15on-1.69.jar log4j-to-slf4j-2.19.0.jar bcutil-jdk
+ 15on-1.69.jar micrometer-observation-1.10.2.jar json-20231013.jar jacks
+ on-databind-2.14.1.jar spring-boot-starter-mail-3.1.2.jar spring-data-m
+ ongodb-4.0.0.jar mongodb-driver-core-4.8.1.jar jakarta.mail-1.0.0.jar f
+ eign-core-12.1.jar spring-beans-6.0.3.jar snakeyaml-1.33.jar logback-co
+ re-1.4.5.jar spring-aop-6.0.3.jar spring-cloud-starter-4.0.1.jar spring
+ -boot-starter-json-3.0.1.jar bcprov-jdk15on-1.69.jar jakarta.activation
+ -api-2.1.0.jar spring-cloud-commons-4.0.1.jar slf4j-api-2.0.6.jar jakar
+ ta.annotation-api-2.1.1.jar tomcat-embed-core-10.1.4.jar aspectjweaver-
+ 1.9.19.jar jackson-core-2.14.1.jar jackson-annotations-2.14.1.jar mongo
+ db-driver-sync-4.8.1.jar spring-boot-starter-3.0.1.jar spring-web-6.0.3
+ .jar spring-security-crypto-6.0.1.jar jackson-datatype-jdk8-2.14.1.jar 
+ gson-2.8.5.jar spring-security-rsa-1.0.11.RELEASE.jar spring-webmvc-6.0
+ .3.jar spring-cloud-openfeign-core-4.0.1.jar spring-boot-starter-aop-3.
+ 0.1.jar angus-activation-1.0.0.jar feign-form-3.8.0.jar feign-form-spri
+ ng-3.8.0.jar spring-context-support-6.0.3.jar feign-slf4j-12.1.jar spri
+ ng-boot-starter-logging-3.0.1.jar micrometer-commons-1.10.2.jar lombok-
+ 1.18.24.jar spring-tx-6.0.3.jar spring-cloud-starter-openfeign-4.0.1.ja
+ r logback-classic-1.4.5.jar bson-4.8.1.jar spring-core-6.0.3.jar spring
+ -boot-3.0.1.jar spring-context-6.0.3.jar tomcat-embed-websocket-10.1.4.
+ jar jul-to-slf4j-2.0.6.jar spring-boot-starter-web-3.0.1.jar spring-clo
+ ud-context-4.0.1.jar log4j-api-2.19.0.jar bson-record-codec-4.8.1.jar j
+ ackson-module-parameter-names-2.14.1.jar
+
